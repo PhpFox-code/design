@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Examples</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/swiper.css">
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".join_career ul li a").on("click",function(){
+			$(".career_main").slideUp(500).parent().removeClass("bg_san");	  
+			if(!$(this).parent().find(".career_main").is(":visible")){
+				$(this).parent().find(".career_main").slideDown(500);
+				$(this).parent().addClass("bg_san");
+			}	    
+		});
+	});
+</script>
+<body>
+	<div class="join_wrap index_wrap">
+		<div class="home_head_fixed">
+			<div class="home_head">
+				<div class="home_head_wrap">
+					<div class="logo"><a href=""></a></div>
+					<div class="main_nav">
+						<ul>
+							<li class="mremp"><a href="javascript:;">ENGLISH</a></li>
+							<li class="line">|</li>
+							<li><a class="active" href="avascript:;">联系我们</a></li>
+							<li><a href="home_join.html">加入莫非</a></li>
+							<li><a href="javascript:;">新闻与出版</a></li>
+							<li><a href="home_case.html">经典案例</a></li>
+							<li><a href="home_about.html">关于莫非</a></li>
+							<li><a href="home.html">首　页</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="join_content">
+			<div class="join_main">
+				<div class="join_career">
+					<h2>欢迎加入非比寻常的创造旅程。</h2>
+					<ul>
+						<li>
+							<a href="javascript:;"><h3>商业室内设计师</h3></a>
+							<div class="career_main">
+								<p>位职责：</p>
+								<p>1、有丰富的餐饮、酒店、娱乐室内设计经验，从业经验在二年以上；</p>
+								<p>2、艺术院校设计专业</p>
+								<p>3、熟悉当地餐饮娱乐动态及设计风格</p>
+								<p>4、熟练使用设计相关软件</p>
+								<p>电话：18890379960</p>
+								<p> E-Mail:<a href="mailto:270240289@qq.com"><span>dfdfdf</span></a></p>
+								<p>地址：湖南长沙市雨花区曙光中路3栋432号</p>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;"><h3>施工图深化设计师</h3></a>
+							<div class="career_main">
+								<p>位职责：</p>
+								<p>1、有丰富的商业空间深化经验，从业经验在二年以上；</p>
+								<p>2、艺术院校设计专业；</p>
+								<p>3、能根据手绘以及效果图深化施工图；</p>
+								<p>4、手绘功底强，熟悉运用相关软件；</p>
+								<p>5、有商业成功案例优先考虑。</p>
+								<p>电话：18890379960</p>
+								<p>E-Mail:<a href="mailto:270240289@qq.com"><span>dfdfdf</span></a></p>
+								<p>地址：湖南长沙市雨花区曙光中路3栋432号</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="about_right_img">
+					<div class="home_main swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"><img src="images/join_us.jpg" alt=""></li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	// var swiper = new Swiper('.swiper-container', {
+	// 	pagination: '.swiper-pagination',
+	// 	slidesPerView: 1,
+	// 	paginationClickable: true,
+	// 	loop: true,
+	// 	autoplay:2000,
+	// 	lazyLoading: true
+	// });
+</script>
+</html>
