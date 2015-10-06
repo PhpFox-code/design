@@ -48,22 +48,26 @@
 			</div>
 		</div>
 		<div class="clear"></div> -->
-		<div class="home_head_fixed">
+		<div class="home_head_fixed index_head">
 			<div class="home_head">
 				<div class="home_head_wrap">
 					<div class="logo"><a href=""></a></div>
 					<div class="main_nav">
 						<ul>
-							<li><a href="home_join.html">联系我们</a></li>
+							<li class="mremp"><a href="javascript:;">ENGLISH</a></li>
+							<li class="line">|</li>
+							<li><a href="home_contact.html">联系我们</a></li>
 							<li><a href="home_join.html">加入莫非</a></li>
-							<li><a href="home_case.html">经典案例</a></li>
+							<li><a href="javascript:;">新闻与出版</a></li>
+							<li><a class="active" href="home_case.html">经典案例</a></li>
 							<li><a href="home_about.html">关于莫非</a></li>
-							<li><a class="active" href="home.html">首　页</a></li>
+							<li><a href="home.html">首　页</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="clear"></div>
 		<!-- head -->
 		<!-- main -->
 		<div class="index_content">
@@ -96,7 +100,7 @@
 						<div class="case_right_head_left">
 							<h2>Seven cake蛋糕</h2>
 							<p>七克拉蛋糕区别于传统店面烘培蛋糕，利用其品牌自身优势--电话和网络订购;产品针对节日及生日蛋糕、下午茶配送等细分化市场定位；中央厨房生产、无店铺、点对点送货,享受优质服务及快捷的经营模式；对食材</p>
-							<a href="">+Read More</a>
+							<!-- <a href="">+Read More</a> -->
 						</div>
 						<div class="case_right_head_right">
 							<p>CUSTOMER：seven cake </p>
@@ -115,6 +119,15 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript">
+		$(window).scroll(function(){
+	 		$('.index_head').css("border-bottom","1px solid #e5e5e5");
+	 		var x = $('.index_head').offset();
+	 		if(x.top <= 0){
+	 			$('.index_head').css("border-bottom","none");
+	 		}
+ 		});
+	</script>
 </body>
 </html>
 

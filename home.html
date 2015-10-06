@@ -6,9 +6,8 @@
 	<title>Examples</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/swiper.css">
 </head>
@@ -16,8 +15,12 @@
 	<div class="home_wrap">
 		<div class="home_main swiper-container" style="height:100%;">
 			<ul class="swiper-wrapper">
-				<li class="swiper-slide"><img src="http://www.jwdainc.com.cn/UpLoadFile/20150529142848424842.jpg"></li>
-				<li class="swiper-slide"><img src="http://www.jwdainc.com.cn/UpLoadFile/20150601131066086608.jpg"></li>
+				<li class="swiper-slide"><img src="images/home_1.jpg"></li>
+				<li class="swiper-slide"><img src="images/home_2.jpg"></li>
+				<li class="swiper-slide"><img src="images/home_3.jpg"></li>
+				<li class="swiper-slide"><img src="images/home_4.jpg"></li>
+				<li class="swiper-slide"><img src="images/home_5.jpg"></li>
+				<li class="swiper-slide"><img src="images/home_6.jpg"></li>
 			</ul>
 			<div class="swiper-pagination"></div>
 		</div>
@@ -26,26 +29,30 @@
 				<div class="logo"><a href=""></a></div>
 				<div class="main_nav">
 					<ul>
-						<li><a href="home_join.html">联系我们</a></li>
+						<li class="mremp"><a href="javascript:;">ENGLISH</a></li>
+						<li class="line">|</li>
+						<li><a href="home_contact.html">联系我们</a></li>
 						<li><a href="home_join.html">加入莫非</a></li>
+						<li><a href="javascript:;">新闻与出版</a></li>
 						<li><a href="home_case.html">经典案例</a></li>
 						<li><a href="home_about.html">关于莫非</a></li>
-						<li><a class="active" href="home.html">首　页</a></li>
+						<li><a class="active" href="javascript:;">首　页</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/swiper.jquery.js"></script>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
 			pagination: '.swiper-pagination',
 			slidesPerView: 'auto',
 			paginationClickable: true,
 			centeredSlides: true,
-			autoplay: 2500,
+			autoplay: 4000,
 			autoplayDisableOninteraction:false,
 			simulateTouch:false,
-			speed: 500,
+			speed: 1000,
 			effect: 'fade',
 			loop: true
 		});

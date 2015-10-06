@@ -10,7 +10,7 @@
  	padding: 0;
  	line-height: 1.4;
  	font-family: Arial,"5FAE\8F6F\96C5\9ED1","微软雅黑","Microsoft Yahei", Helvetica, sans-serif;
- 	background: #CECECE;
+ 	background: #fff;
  }
  p,ul,dl,dd,h5{margin: 0;padding: 0;font-size: 12px;font-weight: normal;line-height: 1.8;letter-spacing: 1px;}
  a{text-decoration: none;color: #ffffff;}
@@ -30,9 +30,9 @@
  }
  .index_head{
  	width: 100%;
- 	height: 107px;
+ 	height: 75px;
  	margin: 0 auto;
- 	background-color: #CECECE;
+ 	background-color: #fff;
  	position: fixed;
  	z-index: 10;
  }
@@ -117,12 +117,12 @@
  	background: url(http://www.jwdainc.com.cn/UpLoadFile/20150601131066086608.jpg) no-repeat center;
  }*/
  .home_head_fixed{
- 	height: 175px;
+ 	margin-bottom: 175px;
  }
  .home_head{
  	width: 100%;
  	overflow: hidden;
- 	background-color:  #CECECE;
+ 	background-color:  #fff;
  	position: absolute;
  	top: 0;
  	z-index: 99;
@@ -131,15 +131,18 @@
  	min-width: 900px;
  }
  .home_head .logo a{
- 	width: 433px;
- 	height: 44px;
+ 	width: 351px;
+ 	height: 32px;
  	float: left;
- 	margin: 15px 20px;
+ 	margin: 20px;
  	background: url(../images/logo.png) no-repeat;
  }
  .home_head .main_nav ul li{
  	float: right;
- 	margin: 30px;
+ 	margin: 25px 20px;
+ }
+ .home_head .main_nav ul li.line{
+ 	color: #fff;
  }
   .home_head a:hover{
   	color: #a40000;
@@ -178,6 +181,9 @@
  }
  .about_right_img img{
  	width: 100%;
+ 	float: left;
+ }
+ .swiper-container{
  }
  /*home_join*/
  .join_detail{
@@ -224,7 +230,8 @@
  }
  /*index_content*/
  .content_main{
- 	width: 1366px;
+ 	min-width: 1200px;
+ 	max-width: 1366px;
  	margin: 0 auto;
  }
 /*.content_main ul{
@@ -232,17 +239,23 @@
 	}*/
 	.content_main ul li{
 		float: left;
-		width: 333px;
-		height: 226px;
-		overflow: hidden;
+		width: 33%;
 		margin: 2px;
+		overflow: hidden;
+		/*margin: 2px;*/
 		text-align: center;
 		position: relative;
 	}
 	.content_main ul li img{
 		width: 100%;
+		float: left;
+		border: 0;
+		border: none;
 	}
-	.content_main ul li .cover_text{
+	.content_main ul li a{
+		display: inline-block;
+	}
+	/*.content_main ul li .cover_text{
 		opacity: 0;
 		width: 100%;
 		height: 100%;
@@ -254,8 +267,8 @@
 		-webkit-transition: all 0.5s ease-out;
 		-moz-transition: all 0.5s ease-out;
 		-o-transition: all 0.5s ease-out;
-	}
-	.cover_text a p{
+	}*/
+	/*.cover_text a p{
 		display: inline-block;
 		zoom: 1;
 		width: 100%;
@@ -267,9 +280,54 @@
 		-webkit-transition: all 0.5s ease-out;
 		-moz-transition: all 0.5s ease-out;
 		-o-transition: all 0.5s ease-out;
+	} */
+	.cover_text a{
+	opacity: 0;
+	transition: visibility 0s ease-out 0.5s,opacity 0.5s ease-out;
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 98px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px #eaeaea solid;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: 800ms;
+    -moz-transition: 800ms;
+    -o-transition: 800ms;
+    -ms-transition: 800ms;
+    transition: 800ms;
+    color: #fff !important;
+    padding: 2px;
+    text-align: center;
+    font-size: 14px;
 	} 
-	.content_main ul li:hover .cover_text{
-		opacity: 1;
+	.cover_text a:hover{
+	background-color: #fff;
+    -webkit-transition: 100ms;
+    -moz-transition: 100ms;
+    -o-transition: 100ms;
+    -ms-transition: 100ms;
+    transition: 100ms;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.5);
+    color: #333333 !important;
+	}
+	.content_main ul li:hover .cover_text a{
+	opacity: 1;
+	}
+	.home_product_text{
+	position: absolute;
+    bottom: 0;
+    padding: 2% 5%;
+    text-align: left;
+	}
+	.home_product_text p,.home_product_text h3{
+	font-size: 14px;
+	color: #ffffff;
 	}
 	/*case.html*/
 	.case_main{
