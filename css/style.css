@@ -5,6 +5,7 @@
  * @date    2015-09-13 11:58:49
  * @version $Id$
  */
+html,body{height: 100%;}
  body{
  	margin: 0;
  	padding: 0;
