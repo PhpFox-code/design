@@ -5,6 +5,7 @@
  * @date    2015-09-13 11:58:49
  * @version $Id$
  */
+html,body{height: 100%;}
  body{
  	margin: 0;
  	padding: 0;
@@ -118,6 +119,7 @@
  }*/
  .home_head_fixed{
  	margin-bottom: 175px;
+ 	overflow: hidden;
  }
  .home_head{
  	width: 100%;
@@ -139,10 +141,13 @@
  }
  .home_head .main_nav ul li{
  	float: right;
- 	margin: 25px 20px;
+ 	margin: 25px 10px;
  }
  .home_head .main_nav ul li.line{
  	color: #fff;
+ }
+  .index_wrap .home_head .main_nav ul li.line{
+ 	color: #a40000;
  }
   .home_head a:hover{
   	color: #a40000;
@@ -366,27 +371,39 @@
 	}
 	.case_right .case_right_head{
 		min-height: 90px;
-		overflow: hidden;
 		text-align: left;
 		line-height: 1.8;
 	}
-	.case_right_head .case_right_head_left{
-		width: 573px;
-		padding-right: 12px;
-		border-right: 1px solid #dfdfdf;
-		float: left;
+	.case_right_head_left{
+		margin: 10px 0;
+		/*width: 573px;*/
+		/*border-right: 1px solid #dfdfdf;*/
 	}
 	.case_right_head_left a{
 		font-size: 12px;
 	}
 	.case_right_head .case_right_head_right{
-		width: 255px;
-		margin-top: 30px;
-		float: right;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	.case_right_head .case_right_head_right li{
+		width: 12%;
+		text-align:justify;
+		padding:0 9px;
+		float: left;
+		border-left: 1px solid #ececec;
+		/*margin-top: 30px;*/
+	}
+	.case_right_head .case_right_head_right li:first-child{
+		border:0;
 	}
 	.case_right .case_right_main dl{
 		margin-top: 15px;
 		text-align: center;
+	}
+	.case_right .case_right_main dd{
+		display: inline-block;
+		width: 49%;
 	}
 	.case_right .case_right_main dd img{
 		width: 100%;
